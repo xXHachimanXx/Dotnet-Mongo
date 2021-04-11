@@ -19,7 +19,7 @@ namespace MongoApi.Controllers
         }
 
         [HttpPost]
-        public ActionResult SalvarInfectado([FromBody] InfectadoDto dto)
+        public ActionResult SalvarInfectado([FromBody] InfectadoDTO dto)
         {
             var infectado = new Infectado(dto.DataNascimento, dto.Sexo, dto.Latitude, dto.Longitude);
 
